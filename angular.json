@@ -1,5 +1,8 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "cli": {
+    "analytics": "8a335c39-6685-4ada-baf9-06d04fa5e5c8"
+  },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
@@ -78,7 +81,11 @@
               "browserTarget": "my-second-cookie-project:build:development"
             }
           },
-          "defaultConfiguration": "development"
+          "defaultConfiguration": "development",
+          "options": {
+            "port": 4202,
+            "host": "second-cookie-site.dev"
+          }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
